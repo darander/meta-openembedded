@@ -6,6 +6,8 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=27818cd7fd83877a8e3ef82b82798ef4"
 
 PR = "r2"
 
+PNBLACKLIST[libsdl-ttf] = "BROKEN: needst to be updated to use freetype2 pkg-config not freetype2-config"
+
 SRC_URI = "http://www.libsdl.org/projects/SDL_ttf/release/SDL_ttf-${PV}.tar.gz \
            file://configure.patch \
 "
