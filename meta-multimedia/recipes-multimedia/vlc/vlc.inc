@@ -5,8 +5,6 @@ SECTION = "multimedia"
 LICENSE = "GPL-2.0"
 LIC_FILES_CHKSUM = "file://COPYING;md5=b234ee4d69f5fce4486a80fdaf4a4263"
 
-PNBLACKLIST[vlc] = "BROKEN: depends on broken libsdl-image"
-
 DEPENDS = "libfribidi libtool libgcrypt gst-plugins-bad virtual/libsdl \
    libsdl-image qt4-x11-free dbus dbus-glib libxml2 gnutls tremor \
    faad2 ffmpeg flac libxpm libxinerama fluidsynth alsa-lib libdvdcss \
