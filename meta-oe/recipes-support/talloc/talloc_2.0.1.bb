@@ -5,6 +5,8 @@ LIC_FILES_CHKSUM = "file://NEWS;md5=5fe776b23a711c9153ee94bc87e47334"
 
 inherit autotools pkgconfig
 
+PNBLACKLIST[talloc] = "BROKEN: doesn't build with B!=S (gnu-configize executed in ${B})"
+
 SRC_URI = "http://samba.org/ftp/${BPN}/${BPN}-${PV}.tar.gz \
            file://install-swig-interface-in-SWINGLIBDIR.patch \
            file://sepbuild.patch \
