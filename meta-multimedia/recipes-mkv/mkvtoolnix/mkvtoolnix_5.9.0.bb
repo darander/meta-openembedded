@@ -4,6 +4,8 @@ HOMEPAGE = "http://www.bunkus.org/videotools/mkvtoolnix/source.html"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://COPYING;md5=b234ee4d69f5fce4486a80fdaf4a4263"
 
+PNBLACKLIST[mkvtoolnix] = "BROKEN: doesn't build with B!=S (ac/ebml.m4 path without ${S})"
+
 DEPENDS = "curl boost expat zlib libebml libmatroska libogg libvorbis bzip2 lzo file ruby-native"
 
 SRC_URI = "http://www.bunkus.org/videotools/mkvtoolnix/sources/mkvtoolnix-${PV}.tar.bz2"
