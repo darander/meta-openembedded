@@ -7,6 +7,7 @@ PR = "${INC_PR}.0"
 SRC_URI += "\
     file://remove.autoconf.version.check.patch \
     file://ecpg-parallel-make-fix.patch \
+    file://use-pkg-config-for-libxml2-dependency.patch \
 "
 
 SRC_URI[md5sum] = "6ee5bb53b97da7c6ad9cb0825d3300dd"
